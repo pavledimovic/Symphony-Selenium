@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestingSuite"  thread-count="1" parallel="false" verbose="1">
+
+	<test name="ChromeTest">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="com.symphony.test.NegativeLogInTest"/>
+			<class name="com.symphony.test.LogInTest"/>
+			<class name="com.symphony.test.SearchResultTest"/>
+			<class name="com.symphony.test.SaveDressesTest"/>
+		</classes>
+		</test>
+	<test name="FirefoxTest">
+		<parameter name="browser" value="Firefox" />
+		<classes>
+			<class name="com.symphony.test.NegativeLogInTest"/>
+		</classes>
+	</test>	
+</suite>

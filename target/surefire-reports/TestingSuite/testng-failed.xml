@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [TestingSuite]">
+  <test thread-count="1" verbose="0" name="FirefoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="com.symphony.test.SaveDressesTest">
+        <methods>
+          <include name="saveDressesTest"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.symphony.test.SaveDressesTest -->
+      <class name="com.symphony.test.LogInTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="tearDown"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.symphony.test.LogInTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestingSuite] -->
