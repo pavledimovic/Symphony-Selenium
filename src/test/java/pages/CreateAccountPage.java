@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
+import utils.ReadExcelConfig;
+
 public class CreateAccountPage {
 
 	WebDriver driver;
@@ -152,7 +154,9 @@ public class CreateAccountPage {
 		
 		public void enter_Email() throws InterruptedException {
 			// Change email for every new test run or delete existing user
-			enter_Email("pavledimovic8@gmail.com");
+			ReadExcelConfig excel = new ReadExcelConfig(Constant.Path_TestData);
+			String sUserName = excel.getData(0,2,1);
+			enter_Email(sUserName);
 			Thread.sleep(1500);
 			click_submit();
 			Thread.sleep(4000);

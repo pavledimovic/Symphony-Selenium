@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import utils.ExcelUtils;
+import utils.ReadExcelConfig;
 
 public class LogInPage {
 
@@ -20,7 +20,6 @@ public class LogInPage {
 	public static String URL = "http://automationpractice.com ";
 
 	// Button ID's
-
 	@FindBy(how = How.CSS, using = ".login")
 	public static WebElement txtbx_LogIn;
 
@@ -54,11 +53,12 @@ public class LogInPage {
 	public void enter_Wrong_Email(String sUserName) {
 		txtbx_EmailAdress.sendKeys(sUserName);
 	}
-
 	
 	public void fill_Wrong_Details() throws Exception {
 		
-		String sUserName = ExcelUtils.getCellData(2, 2);
+		
+		ReadExcelConfig excel = new ReadExcelConfig(Constant.Path_TestData);
+		String sUserName = excel.getData(0,1,1);
 		enter_Wrong_Email(sUserName);
 		click_submit();
 }

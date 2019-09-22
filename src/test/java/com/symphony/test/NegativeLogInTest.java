@@ -21,6 +21,7 @@ import org.testng.annotations.Test;
 import pages.LogInPage;
 import utils.Utility;
 
+
 public class NegativeLogInTest {
 
 	static WebDriver driver;
@@ -61,7 +62,11 @@ public class NegativeLogInTest {
 		WebElement email = (new WebDriverWait(driver, 20))
 				.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("#SubmitCreate > span")));
 
-		// Type wrong email into input field		
+		// Type wrong email into input field	
+		
+		//ReadExcelConfig excel = new ReadExcelConfig("C:/Users/PavleD/eclipse-workspace/Symphony/src/test/java/testData/TestData.xlsx");
+		//System.out.println(excel.getData(0,1,1));
+
 		Action.fill_Wrong_Details();
 
 

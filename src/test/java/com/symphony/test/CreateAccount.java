@@ -22,7 +22,7 @@ import pages.CreateAccountPage;
 import pages.LogInPage;
 import utils.Utility;
 
-public class LogInTest {
+public class CreateAccount {
 
 	static WebDriver driver;
 
@@ -46,7 +46,7 @@ public class LogInTest {
 	}
 
 	@Test
-	public void loginTest() throws InterruptedException {
+	public void createAccountTest() throws InterruptedException {
 
 		// Get web page URl and manage browser window to required size
 		driver.get(CreateAccountPage.URL2);
