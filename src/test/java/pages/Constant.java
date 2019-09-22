@@ -8,7 +8,7 @@ public class Constant {
 
     public static final String Password = "Test@123";
 
-    public static final String Path_TestData = "C:\\Users\\PavleD\\eclipse-workspace\\Symphony\\src\\test\\java\\TestData"; 
+    public static final String Path_TestData = "C:/Users/PavleD/eclipse-workspace/Symphony/src/test/java/TestData"; 
 
     public static final String File_TestData = "TestData.xlsx";
 
