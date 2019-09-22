@@ -8,7 +8,7 @@
 		<parameter name="browser" value="Chrome" />
 		<classes>
 			<class name="com.symphony.test.NegativeLogInTest"/>
-			<class name="com.symphony.test.LogInTest"/>
+			<class name="com.symphony.test.CreateAccountTest"/>
 			<class name="com.symphony.test.SearchResultTest"/>
 			<class name="com.symphony.test.SaveDressesTest"/>
 		</classes>

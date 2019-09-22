@@ -22,7 +22,7 @@ import pages.CreateAccountPage;
 import pages.LogInPage;
 import utils.Utility;
 
-public class CreateAccount {
+public class CreateAccountTest {
 
 	static WebDriver driver;
 
