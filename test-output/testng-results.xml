@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22045" started-at="2019-09-22T18:30:08Z" finished-at="2019-09-22T18:30:30Z">
+  <suite name="Default suite" duration-ms="14215" started-at="2019-09-22T21:53:55Z" finished-at="2019-09-22T21:54:09Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22045" started-at="2019-09-22T18:30:08Z" finished-at="2019-09-22T18:30:30Z">
-      <class name="com.symphony.test.CreateAccount">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.symphony.test.CreateAccount@12f41634]" name="setup" is-config="true" duration-ms="3608" started-at="2019-09-22T18:30:08Z" finished-at="2019-09-22T18:30:11Z">
+    <test name="Default test" duration-ms="14215" started-at="2019-09-22T21:53:55Z" finished-at="2019-09-22T21:54:09Z">
+      <class name="com.symphony.test.SearchResultTest">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.symphony.test.SearchResultTest@4923ab24]" name="setup" is-config="true" duration-ms="3765" started-at="2019-09-22T21:53:55Z" finished-at="2019-09-22T21:53:59Z">
           <params>
             <param index="0">
               <value>
@@ -18,22 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="createAccountTest()[pri:0, instance:com.symphony.test.CreateAccount@12f41634]" name="createAccountTest" duration-ms="17599" started-at="2019-09-22T18:30:11Z" finished-at="2019-09-22T18:30:29Z">
+        <test-method status="PASS" signature="searchTest()[pri:0, instance:com.symphony.test.SearchResultTest@4923ab24]" name="searchTest" duration-ms="9620" started-at="2019-09-22T21:53:59Z" finished-at="2019-09-22T21:54:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createAccountTest -->
-        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.symphony.test.CreateAccount@12f41634]" name="tearDown" is-config="true" duration-ms="806" started-at="2019-09-22T18:30:29Z" finished-at="2019-09-22T18:30:30Z">
+        </test-method> <!-- searchTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.symphony.test.SearchResultTest@4923ab24]" name="tearDown" is-config="true" duration-ms="787" started-at="2019-09-22T21:54:09Z" finished-at="2019-09-22T21:54:09Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=createAccountTest status=SUCCESS method=CreateAccount.createAccountTest()[pri:0, instance:com.symphony.test.CreateAccount@12f41634] output={null}]]]>
+                <![CDATA[[TestResult name=searchTest status=SUCCESS method=SearchResultTest.searchTest()[pri:0, instance:com.symphony.test.SearchResultTest@4923ab24] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.symphony.test.CreateAccount -->
+      </class> <!-- com.symphony.test.SearchResultTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

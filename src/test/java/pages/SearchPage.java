@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -32,9 +34,24 @@ public class SearchPage {
 	@FindBy(how = How.CSS, using = ".ajax_block_product:nth-child(5)")
 	public static WebElement txtbx_product5;
 	
+	@FindBy(how = How.CSS, using = ".blockbestsellers:nth-child(1)")
+	public static WebElement btn_BestSellers;
+	
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/ul[1]/li")
+	public static int txtbx_popular;
+	
+	@FindBy(how = How.XPATH, using = "/html[1]/body[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/ul[2]/li")
+	public static int txtbx_bestselers;
+	
 	public void get_SizeOfProduct1() {
 		txtbx_product1.getText();
 	}
+	
+	public void click_bestSelers() {
+		btn_BestSellers.click();
+	}
+	
+	
 
 
 }
