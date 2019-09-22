@@ -65,7 +65,7 @@ public class SearchResultTest {
 		// Total number of products in Popular and best sellers
 		int productsTotal = 14;
 		int products = driver.findElements(By.className("ajax_block_product")).size();
-		System.out.println("Count of Featured Courses page is:"+products);
+		System.out.println("Total number of Popular and Bestsellers products is:"+products);
 		
 		if (products == (productsTotal)) {
 			System.out.println("PASS Total number of products is 14");
